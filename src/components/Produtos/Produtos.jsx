@@ -7,9 +7,18 @@ export const Produtos = ({name, image, description, oldPrice, price}) => {
             <div className={styles.descricaoProduto}>
                 <p>{name}</p>
                 <p>{description}</p>
-                <p>{oldPrice}</p>
-                <p>{price}</p>
-                <p>{price/2}</p>
+                <p>{new Intl.NumberFormat("pt-BR", {
+                    style: "currency", 
+                    currency: "BRL"
+                }).format(oldPrice)}</p>
+                <p>{new Intl.NumberFormat("pt-BR", {
+                    style: "currency", 
+                    currency: "BRL"
+                }).format(price)}</p>
+                <p>2 x de {new Intl.NumberFormat("pt-BR", {
+                    style: "currency", 
+                    currency: "BRL"
+                }).format(price/2)}</p>
                 <input type="button" value="Comprar"/>
             </div>
         </>
