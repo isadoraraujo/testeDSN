@@ -1,0 +1,30 @@
+.header {
+    height: 15rem;
+    width: 100%;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    background-color: #c3b457;
+    color: black;
+}
+
+.mensagem p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    width: 80%;
+    height: 2rem;
+    cursor: pointer;
+}
