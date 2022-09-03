@@ -30,7 +30,11 @@
 
 .produtos {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
+    height: 47.5rem;
+    width: 60rem;
 }
 
 .main button {
@@ -47,4 +51,12 @@
 
 .main button:hover {
     background-color: #707070;
+}
+
+.container {
+    width: 201px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }

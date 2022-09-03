@@ -11,11 +11,11 @@ export const Footer = () => {
         <p className={styles.paragrafo}>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
         <form className={styles.newsletter}>
             <div className={styles.ordena}>
-                <label for="nome">Nome do seu amigo:</label>
+                <label htmlFor="nome">Nome do seu amigo:</label>
                 <input type="text" id="nome"/>
             </div>
             <div className={styles.ordena}>
-                <label for="email">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input type="text" id="email"/>
             </div>
         </form>

@@ -22,6 +22,7 @@ footer {
 .paragrafo {
     text-align: center;
     margin: 2rem;
+    font-weight: bold;
 }
 
 .newsletter {

@@ -22,9 +22,9 @@ export const Section = () => {
               <Input id="cpf" type="text" value="CPF:"/>
                 <div className={styles.radio}>
                     <input id="generoM" type="radio" name="genero"/>
-                    <label>Masculino</label>
+                    <label htmlFor="generoM">Masculino</label>
                     <input id="generoF" type="radio" name="genero"/>
-                    <label>Feminino</label>
+                    <label htmlFor="generoF">Feminino</label>
                 </div>
                 <div>
                     <button className={styles.botaoEnviar} type="submit">Enviar</button>
