@@ -9,17 +9,19 @@ export const Footer = () => {
             <div className={styles.linhaSecundaria}></div>
         </div>
         <p className={styles.paragrafo}>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-        <form className={styles.newsletter}>
-            <div className={styles.ordena}>
-                <label htmlFor="nome">Nome do seu amigo:</label>
-                <input type="text" id="nome"/>
+        <form className={styles.form}>
+            <div className={styles.newsletter}>
+                <div className={styles.ordena}>
+                    <label htmlFor="nome">Nome do seu amigo:</label>
+                    <input type="text" id="nome" required/>
+                </div>
+                <div className={styles.ordena}>
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" id="email" required/>
+                </div>
             </div>
-            <div className={styles.ordena}>
-                <label htmlFor="email">Email:</label>
-                <input type="text" id="email"/>
-            </div>
+            <button type='submit' className={styles.botaoEnvia}>Enviar agora</button>
         </form>
-        <button type='submit' className={styles.botaoEnvia}>Enviar agora</button>
     </footer>
     )
 }

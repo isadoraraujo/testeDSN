@@ -1,5 +1,6 @@
 import styles from "./section.module.css"
 import { Input } from "../Input/Input"
+import { IMaskInput } from "react-imask"
 
 export const Section = () => {
     return (
@@ -17,13 +18,21 @@ export const Section = () => {
                 </p>
             </div>
             <form className={styles.form}>
-              <Input id="nome" type="text" value="Seu nome:"/>
-              <Input id="email" type="email" value="Email:"/>
-              <Input id="cpf" type="text" value="CPF:"/>
+                <Input id="nome" type="text" value="Seu nome:" />
+                <Input id="email" type="email" value="Email:" />
+                <div className={styles.inputCpf}>
+                    <label for="cpf">CPF</label>
+                    <IMaskInput
+                        id="cpf"
+                        className={styles.input}
+                        mask="000.000.000-00"
+                        required
+                    />
+                </div>
                 <div className={styles.radio}>
-                    <input id="generoM" type="radio" name="genero"/>
+                    <input id="generoM" type="radio" name="genero" checked/>
                     <label htmlFor="generoM">Masculino</label>
-                    <input id="generoF" type="radio" name="genero"/>
+                    <input id="generoF" type="radio" name="genero" />
                     <label htmlFor="generoF">Feminino</label>
                 </div>
                 <div>
